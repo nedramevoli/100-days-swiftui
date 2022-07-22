@@ -29,10 +29,8 @@ struct ContentView: View {
     // calculates overall total of ticket
     var grandTotal: Double {
         let tipSelection = Double(tipPercentage)
-        
         let tipValue = checkAmount / 100 * tipSelection
-        let overallTotal = checkAmount + tipValue
-        return overallTotal
+        return checkAmount + tipValue
     }
     
     var body: some View {
